@@ -1,0 +1,13 @@
+
+<div class= "row" >
+  <div class= "col-xl-4 col-md-6 col-sm-8 col-10" style="margin:auto; background-color: #ebeaea; border-radius: 6px; padding: 10px;
+  box-shadow: 3px 3px 3px 3px #cfcece" >
+    <h1>New post</h1>
+    <%= render "form", post: @post %>
+  </div>
+</div>
+<br>
+
+<div>
+  <%= link_to "Back to posts", posts_path %>
+</div>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :todos
   resources :tasks
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -8,6 +9,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the root path route ("/")
-  # root "posts#index"
-  root 'todos#index'
+   root "posts#index"
+  #root 'todos#index'
 end
