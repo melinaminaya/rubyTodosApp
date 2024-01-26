@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'home/about' #that is a static page
   resources :posts
   resources :todos
   resources :tasks
