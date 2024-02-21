@@ -14,6 +14,13 @@
     <%= post.keywords %>
   </p>
   <p>
+    <% if post.user.present? %>
+    <%= post.user.email %>
+  <% else %>
+    User information not available
+  <% end %>
+  </p>
+  <p>
     <%= link_to "", post, class:"post-link" %>
   </p>
   <% post.images.each do |image|%>
